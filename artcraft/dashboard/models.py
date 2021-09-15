@@ -38,7 +38,7 @@ class Artwork(models.Model):
 
 class Order(models.Model):
     orderID = models.AutoField(primary_key=True)
-    orderPrice = models.IntegerField()
+    orderPrice = models.IntegerField() # there will be a shipping fee teehee
     orderDate = models.DateField(max_length=20)
     artworkID = models.ForeignKey(Artwork, on_delete=models.CASCADE)
     customerID = models.ForeignKey(Customer, on_delete=models.CASCADE)
