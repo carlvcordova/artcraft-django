@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from dashboard import views
+from django.urls import path, include
 
 app_name = 'dashboard'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dashboard/', views.dashboardView.as_view(), name="dashboard_view"),
+    path('artcraft/', include('dashboard.urls', namespace='dashboard')),
 ]

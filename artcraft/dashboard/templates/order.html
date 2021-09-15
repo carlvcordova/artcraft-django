@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <table class="table">
+        <h2>ORDER</h2>
+        <tr>
+            <th>Order ID</th>
+            <th>Order Price</th>
+            <th>Order Date</th>
+            <th>Artwork ID</th>
+            <th>Customer ID</th>
+        </tr>
+        {% for i in order %}
+        <tr>
+            <td>{{i.orderID}}</td>
+            <td>{{i.orderPrice}}</td>
+            <td>{{i.orderDate}}</td>
+            <td>{{i.artworkID}}</td>
+            <td>{{i.customerID}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+   
+{% endblock content %}

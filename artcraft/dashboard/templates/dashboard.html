@@ -4,107 +4,24 @@
     
     <p class="header">WELCOME TO ARTCRAFT</p>
     <h4>Discover the world through artworks!</h4>
-    <table class="table">
-        <h2>ARTIST</h2>
-        <tr>
-            <th>Artist ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Birth Date</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>Username</th>
-            <th>Password</th>
-        </tr>
-        {% for i in artist %}
-        <tr>
-            <td>{{i.artistID}}</td>
-            <td>{{i.firstName}}</td>
-            <td>{{i.lastName}}</td>
-            <td>{{i.birthDate}}</td>
-            <td>{{i.address}}</td>
-            <td>{{i.phoneNumber}}</td>
-            <td>{{i.username}}</td>
-            <td>{{i.password}}</td>
-        </tr>
-        {% endfor %}
-    </table>
-
-    <table class="table">
-        <h2>CUSTOMER</h2>
-        <tr>
-            <th>Customer ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>Username</th>
-            <th>Password</th>
-        </tr>
-        {% for i in customer %}
-        <tr>
-            <td>{{i.customerID}}</td>
-            <td>{{i.firstName}}</td>
-            <td>{{i.lastName}}</td>
-            <td>{{i.email}}</td>
-            <td>{{i.address}}</td>
-            <td>{{i.phoneNumber}}</td>
-            <td>{{i.username}}</td>
-            <td>{{i.password}}</td>
-        </tr>
-        {% endfor %}
-    </table>
-
-    <table class="table">
-        <h2>ARTWORK</h2>
-        <tr>
-            <th>Artwork ID</th>
-            <th>Year</th>
-            <th>Title</th>
-            <th>Price</th>
-            <th>Type</th>
-            <th>Description</th>
-            <th>ArtistID</th>
-        </tr>
-        {% for i in artwork %}
-        <tr>
-            <td>{{i.artworkID}}</td>
-            <td>{{i.year}}</td>
-            <td>{{i.title}}</td>
-            <td>{{i.price}}</td>
-            <td>{{i.type}}</td>
-            <td>{{i.description}}</td>
-            <td>{{i.ArtistID}}</>
-        </tr>
-        {% endfor %}
-    </table>
-
-    <table class="table">
-        <h2>ORDER</h2>
-        <tr>
-            <th>Order ID</th>
-            <th>Order Price</th>
-            <th>Order Date</th>
-            <th>Artwork ID</th>
-            <th>Customer ID</th>
-        </tr>
-        {% for i in order %}
-        <tr>
-            <td>{{i.orderID}}</td>
-            <td>{{i.orderPrice}}</td>
-            <td>{{i.orderDate}}</td>
-            <td>{{i.artworkID}}</td>
-            <td>{{i.customerID}}</td>
-        </tr>
-        {% endfor %}
-    </table>
-
-    <!--
-    <div>
-        <button type="button" class="btn btn-success">Shop Now</button>
-    </div>
-    -->
-   
     
+    <table class="table table-hover">
+        <tr>
+            <td style="text-align: right; vertical-align: middle;"><strong>ARTIST</strong></td>
+            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:artist_view' %}">View Details</a></button></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: middle;"><strong>ARTWORK</strong></td>
+            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:artwork_view' %}">View Details</a></button></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: middle;"><strong>CUSTOMER</strong></td>
+            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:customer_view' %}">View Details</a></button></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; vertical-align: middle;"><strong>ORDER</strong></td>
+            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:order_view' %}">View Details</a></button></td>
+        </tr>
+    </table>
+
 {% endblock content %}
