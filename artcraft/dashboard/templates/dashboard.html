@@ -2,26 +2,25 @@
 
 {% block content %}
     
-    <p class="header">WELCOME TO ARTCRAFT</p>
-    <h4>Discover the world through artworks!</h4>
-    
-    <table class="table table-hover">
-        <tr>
-            <td style="text-align: right; vertical-align: middle;"><strong>ARTIST</strong></td>
-            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:artist_view' %}">View Details</a></button></td>
-        </tr>
-        <tr>
-            <td style="text-align: right; vertical-align: middle;"><strong>ARTWORK</strong></td>
-            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:artwork_view' %}">View Details</a></button></td>
-        </tr>
-        <tr>
-            <td style="text-align: right; vertical-align: middle;"><strong>CUSTOMER</strong></td>
-            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:customer_view' %}">View Details</a></button></td>
-        </tr>
-        <tr>
-            <td style="text-align: right; vertical-align: middle;"><strong>ORDER</strong></td>
-            <td style="text-align: left; vertical-align: middle;"><button type="button" class="btn btn-outline-primary"><a href="{% url 'dashboard:order_view' %}">View Details</a></button></td>
-        </tr>
-    </table>
+    <p class="header">WELCOME TO ARTCRAFT DASHBOARD</p>
+    <br><br>
 
+        <table class="table table-hover">
+            <tr>
+                <td style="text-align: right; vertical-align: middle;"><strong>ARTIST</strong></td>
+                <td style="text-align: left; vertical-align: middle;"><a href="{% url 'dashboard:artist_view' %}">View Details</a></button></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; vertical-align: middle;"><strong>ARTWORK</strong></td>
+                <td style="text-align: left; vertical-align: middle;"><a href="{% url 'dashboard:artwork_view' %}">View Details</a></button></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; vertical-align: middle;"><strong>CUSTOMER</strong></td>
+                <td style="text-align: left; vertical-align: middle;"><a href="{% url 'dashboard:customer_view' %}">View Details</a></button></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; vertical-align: middle;"><strong>ORDER</strong></td>
+                <td style="text-align: left; vertical-align: middle;"><a href="{% url 'dashboard:order_view' %}">View Details</a></button></td>
+            </tr>
+        </table>
 {% endblock content %}

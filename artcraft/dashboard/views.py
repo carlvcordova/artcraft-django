@@ -34,3 +34,19 @@ class orderView(View):
         
         order = Order.objects.all()
         return render(request, 'order.html', {'order':order})
+
+class signinView(View):
+    def get(self, request):
+        
+        return render(request, 'signin.html')
+
+class signupView(View):
+    def get(self, request):
+        
+        return render(request, 'signup.html')
+
+
+class homeView(View):
+    def get(self, request):
+        
+        return render(request, 'home.html')
