@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
+<section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">   
+        <h2>Artist</h2>
+          <ol>
+            <li><a href="{% url 'dashboard:sample_view' %}">Home</a></li>
+            <li>Artist</li>
+          </ol>
+        </div>        
     <table class="table">
-        <h2>ARTIST</h2>
+        
         <tr>
             <th>Artist ID</th>
             <th>First Name</th>
@@ -23,6 +31,7 @@
         </tr>
         {% endfor %}
     </table>
-
+ </div>
+    </section><!-- End Breadcrumbs -->
    
 {% endblock content %}
