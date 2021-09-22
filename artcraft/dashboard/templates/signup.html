@@ -48,14 +48,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{% url 'dashboard:sample_view' %}">Home</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'dashboard:homepage_view' %}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Features</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="link_name" href="{% url 'dashboard:dashboard_view' %}">Dashboard</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-          <li><a class="signin link_name" href="{% url 'dashboard:inner_view' %}">Sign In</a></li>
+          <li><a class="signin link_name" href="{% url 'dashboard:signin_view' %}">Sign In</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -72,7 +72,7 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <ol>
-            <li><a href="{% url 'dashboard:sample_view' %}">Home</a></li>
+            <li><a href="{% url 'dashboard:homepage_view' %}">Home</a></li>
             <li>Sign Up</li>
           </ol>
         </div>
