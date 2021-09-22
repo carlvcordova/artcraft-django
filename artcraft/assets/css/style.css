@@ -1582,3 +1582,330 @@ section {
   font-size: 13px;
   color: #fff;
 }
+/*Sign In CSS starts here*/
+        .wrapper {
+          margin-left: 350px;
+          max-width: 600px;
+          height: 600px;
+          width: 100%;
+          background: white;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          padding: 15px;
+          box-shadow: 0px 0px 10px #c4c4c4;
+          border-radius: 5px;
+        }
+
+        .wrapper .input-data {
+          left: 12%; 
+          height: 60px;
+          width: 75%;
+          padding-bottom: 1%;
+          position: relative;
+        }
+
+        .wrapper .input-data input {
+          height: 100%;
+          width: 98%;
+          padding-top: 15px;
+          padding-left: 5%;
+          border: none;
+          font-size: 15px;
+          position: relative;
+        }
+
+        .input-data input:focus ~ label,
+        .input-data input:valid ~ label {
+          transform: translateY(-28px);
+          font-size: 12px;
+          padding-left: 5px;
+          color: #1500ff;
+        }
+
+        .wrapper .input-data label {
+          font-size: 13px;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          color: grey;
+          pointer-events: none;
+          transition: all 0.3s ease;
+        }
+
+        .wrapper .input-data .underline {
+          position: absolute;
+          bottom: 0px;
+          height: 2px;
+          width: 97%;
+          margin-left: 4px;
+          margin-right: 4px;
+          background: linear-gradient(135deg, #1500ff, #bb00ff);
+        }
+
+        .input-data .underline:before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background: purple;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+
+        .input-data input:focus ~ .underline:before,
+        .input-data input:valid ~ .underline:before {
+          transform: scaleX(1);
+        }  
+
+        button {
+          height: 50px;
+          width: 55%;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background: linear-gradient(135deg, #1500ff, #bb00ff);
+          margin-left: 20%;
+        }
+
+        button:hover {
+          background: linear-gradient(-135deg, #1500ff, #bb00ff);
+        }
+
+        .textfield {
+          margin-left: 20%;
+          padding-top: 10px;
+          font-size: 13px;
+          color: rgb(143, 143, 143);
+        }
+
+        .signup {
+          padding-top: 10px;
+          font-size: 12px;
+          margin-left: 22%;
+          color: rgb(99, 99, 99);
+        }
+
+        .psw {
+          margin-left: 22%;
+          float: left;
+          font-size: 12px;
+          color: rgb(99, 99, 99);
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .error-messages {
+          padding: 10px;
+          background-color: #1500ff;
+          color: white;
+          text-align: center;
+          margin: 5px;
+        }
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        .closebtn:hover {
+          color: black;
+        }
+
+      /*Sign In CSS ends here*/
+
+      /*Sign Up CSS starts here*/
+      
+        .container {
+          position: absolute;
+          left: 50px;
+          max-width: 1000px;
+          height: 600px;
+          width: 100%;
+          background-color: #fff;
+          box-shadow: 0px 0px 10px #c4c4c4;
+          border-radius: 5px;
+          padding: 30px 35px;
+        }
+
+        .container .title {
+          font-size: 30px;
+          font-weight: 700;
+          position: relative;
+          text-align: center;
+        }
+        .container .tagline {
+          font-size: 15px;
+          font-weight: 500;
+          padding-bottom: 5px;
+          text-align: center;
+          position: relative;
+        }
+        .container .tagline::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 3px;
+          width: 910px;
+          border-radius: 5px;
+          background-image: linear-gradient(to right, #1500ff, #bb00ff);
+        }
+        .content form .user-details {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-right: 20px;
+          margin-top: 30px;
+          margin-bottom: 0px;
+        }
+        form .user-details .input-box {
+          margin-bottom: 10px;
+          width: calc(100% / 2 - 20px);
+        }
+        form .input-box span.details {
+          display: block;
+          font-weight: 500;
+          margin-bottom: 2px;
+        }
+        .user-details .input-box input {
+          height: 45px;
+          width: 100%;
+          outline: none;
+          font-size: 13px;
+          border-radius: 5px;
+          padding-left: 15px;
+          border: 1px solid #ccc;
+          border-bottom-width: 2px;
+          transition: all 0.3s ease;
+        }
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid {
+          border-color: #1500ff;
+        }
+        form .gender-details .gender-title {
+          font-size: 13px;
+          font-weight: 500;
+        }
+        form .category {
+          display: flex;
+          width: 35%;
+          margin: 12px;
+          justify-content: space-between;
+        }
+        form .category label {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        form .category label .dot {
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+          margin-right: 10px;
+          background: #d9d9d9;
+          border: 5px solid transparent;
+          transition: all 0.3s ease;
+        }
+        #dot-1:checked ~ .category label .one,
+        #dot-2:checked ~ .category label .two {
+          background: #1500ff;
+          border-color: #d9d9d9;
+        }
+        form input[type="radio"] {
+          display: none;
+        }
+        form .button {
+          position: relative;
+          height: 45px;
+          width: 30%;
+          margin-left: 330px;
+          margin-top: 20px;
+          margin-bottom: 5px;
+        }
+
+        form .button input {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background: linear-gradient(135deg, #1500ff, #bb00ff);
+        }
+        form .button input:hover {
+          /* transform: scale(0.99); */
+          background: linear-gradient(-135deg, #1500ff, #bb00ff);
+        }
+        @media (max-width: 584px) {
+          .container {
+            max-width: 100%;
+          }
+          form .user-details .input-box {
+            margin-bottom: 15px;
+            width: 100%;
+          }
+          form .category {
+            width: 100%;
+          }
+          .content form .user-details {
+            max-height: 300px;
+            overflow-y: scroll;
+          }
+          .user-details::-webkit-scrollbar {
+            width: 5px;
+          }
+        }
+        @media (max-width: 459px) {
+          .container .content .category {
+            flex-direction: column;
+          }
+        }
+
+        .signin {
+          padding-top: 10px;
+          font-size: 12px;
+          text-align: center;
+          color: rgb(99, 99, 99);
+          margin-bottom: 7px;
+        }
+        a {
+          text-decoration: none;
+        }
+
+        .error-message {
+          padding: 10px;
+          background-color: #1500ff;
+          color: white;
+          text-align: center;
+          margin: 5px;
+        }
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        .closebtn:hover {
+          color: black;
+        }
+
+      /*Sign Up CSS ends here*/
