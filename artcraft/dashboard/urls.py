@@ -12,6 +12,5 @@ urlpatterns = [
     path('order/', views.orderView.as_view(), name="order_view"),
     path('signin/', views.signinView.as_view(), name="signin_view"), 
     path('signup/', views.signupView.as_view(), name="signup_view"),
-    path('sample/', views.sampleView.as_view(), name="sample_view"),
-    path('inner/', views.innerView.as_view(), name="inner_view"),
+    path('homepage/', views.homepageView.as_view(), name="homepage_view"),
 ]

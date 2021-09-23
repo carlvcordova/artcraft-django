@@ -51,12 +51,8 @@ class homeView(View):
         
         return render(request, 'home.html')
 
-class sampleView(View):
+class homepageView(View):
     def get(self, request):
         
-        return render(request, 'sample.html')
+        return render(request, 'homepage.html')
 
-class innerView(View):
-    def get(self, request):
-        
-        return render(request, 'inner-page.html')
